@@ -23,4 +23,4 @@ And let's take a look a bit closer:
 
 ![map closer view]("https://github.com/kostyaCS/Laboratory2/blob/main/closemap.png")
 
-Looks like there were some films shot in Kyiv, Lviv and Poland.
+Looks like there were some films shot in Kyiv, Lviv and Poland!
