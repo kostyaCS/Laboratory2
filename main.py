@@ -95,7 +95,7 @@ def create_html_map(year: int, user_lattitude: float, user_longtitude: float, pa
         films_and_locations.append(film)
     sorted_coordinates = sorted(films_and_locations, key=lambda x:\
     haversine_distance(user_lattitude, user_longtitude, x[0], x[1]))[:10]
-    map_html = folium.Map()
+    map_html = folium.Map(tiles='Stamen Terrain')
     map_html.add_child(folium.Marker(location=[user_lattitude, user_longtitude],
     popup="Моя точка!", icon=folium.Icon()))
     for lattitude, longtitude in sorted_coordinates[1:]:
