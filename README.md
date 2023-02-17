@@ -17,10 +17,10 @@ Here, first argument is a year, second - Lviv's lattitude, third - Lviv's longti
 
 Click Enter, wait a bit - and what we have?
 
-![map big view](https://user-images.githubusercontent.com/116595519/219000686-7becee82-1ad4-40c3-86ff-6e4b292fc1e6.png)
+![map big view](https://user-images.githubusercontent.com/116595519/219572424-d9a9485e-41d2-4efe-9b22-c7ffc6b96416.png)
 
 And let's take a look a bit closer:
 
-![map closer view](https://user-images.githubusercontent.com/116595519/219000734-6191624d-e280-4de3-b3dd-ee9107afdab5.png)
+![map closer view](https://user-images.githubusercontent.com/116595519/219572503-06e9dcbb-7b62-401b-ae27-e750ede981df.png)
 
 Looks like there were some films shot in Kyiv, Lviv and Poland!
