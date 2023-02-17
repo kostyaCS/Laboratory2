@@ -29,13 +29,18 @@ def get_coordinates(address: str) -> Tuple[float, float]:
     :type address: str
     :return: coordinates(latitude, longtitude)
     :return type: tuple
+    >>> get_coordinates('Kyiv')
+    (50.4500336, 30.5241361)
+    >>> get_coordinates('Zagreb')
+    (45.84264135, 15.962231476593626)
     """
     try:
         geolocator = Nominatim(user_agent="app")
         location = geolocator.geocode(address)
-        return (location.latitude, location.longitude)
+        return location.latitude, location.longitude
     except Exception:
         return None
+
 
 def haversine_distance(latitude1: float, longtitude1: float, latitude2: float,\
     longtitude2: float) -> float:
@@ -53,6 +58,10 @@ def haversine_distance(latitude1: float, longtitude1: float, latitude2: float,\
     :type longtitude2: float
     :return: haversine distance beetwen two points on a map
     :type return: float
+    >>> haversine_distance(45.84264135, 30.5241361, 50.4500336, 15.962231476593626)
+    1192.3278812395065
+    >>> haversine_distance(56.84264135, 2.5241361, 48.4500336, 10.962231476593626)
+    1090.7366417082821
     """
     radius_of_earth = 6367.4445
     d_latitude = radians(latitude2 - latitude1)
@@ -110,7 +119,7 @@ def create_html_map(year: int, user_latitude: float, user_longtitude: float, pat
     popup="Your place!", icon=folium.Icon(color='lightgray', icon='home')))
     for latitude, longtitude  in check_films(year, path):
         if (latitude, longtitude) not in points_that_already_on_the_map\
-         and haversine_distance(user_latitude, user_longtitude, latitude, longtitude) < 800:
+         and haversine_distance(user_latitude, user_longtitude, latitude, longtitude) < 1000:
             child_marker = folium.Marker(location=[latitude, longtitude],\
             icon=folium.Icon(color='red'))
             map_html.add_child(child_marker)
