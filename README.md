@@ -23,4 +23,4 @@ And let's take a look a bit closer:
 
 ![map closer view](https://user-images.githubusercontent.com/116595519/219572503-06e9dcbb-7b62-401b-ae27-e750ede981df.png)
 
-Looks like there were some films shot in Kyiv, Lviv and Poland!
+Looks like there were some films shot in Kyiv, Lviv, Poland, Austria and, even, Bosnia!
